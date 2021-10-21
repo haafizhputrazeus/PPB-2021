@@ -16,10 +16,10 @@
         android:background="@color/teal_200"
         android:layout_height="wrap_content"/>
 
-    <LinearLayout
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+         <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
         <TextView
             android:layout_width="150dp"
@@ -35,8 +35,7 @@
             android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine" />
-
-    </LinearLayout>
+         </LinearLayout>
 
     <LinearLayout
         android:layout_marginTop="30dp"

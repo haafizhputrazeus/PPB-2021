@@ -10,23 +10,25 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity  {
-    EditText angk1, angk2;
+    EditText angk1,angk2;
     TextView hasilnya;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        angk1 = (EditText) findViewById(R.id.angka1);
-        angk2 = (EditText) findViewById(R.id.angka2);
-        hasilnya = (TextView) findViewById(R.id.hasilhitung);
+        angk1=(EditText) findViewById(R.id.angka1);
+        angk2=(EditText) findViewById(R.id.angka2);
+        hasilnya= (TextView) findViewById(R.id.hasilhitung);
     }
 
-    public void hitung(View View) {
-        int al=Integer.parseInt(angk1.getText().toString());
-        int al=Integer.parseInt(angk2.getText().toString()) ;
-        Integer hasil=angk1+angk2;
+    public void hitung(View view) {
+        int a1=Integer.parseInt(angk1.getText().toString());
+        int a2=Integer.parseInt(angk2.getText().toString()) ;
+        Integer hasil=a1+a2;
         hasilnya.setText(hasil.toString());
+
     }
 }
